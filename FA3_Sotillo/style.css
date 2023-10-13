@@ -1,0 +1,37 @@
+body {
+    background-image: url("BGimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #FFB6C1; 
+    font-family: Serif, Georgia;
+    border: 2px dotted blue;
+    padding: 10px 15px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    background-color: hsl(120, 50%, 70%); 
+    font-style: italic;
+    padding: 20px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+    border-top-style: dashed; 
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: solid;
+    width: 500px;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(255, 0, 0); 
+    margin: 2px 5px;
+}
