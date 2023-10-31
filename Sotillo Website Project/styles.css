@@ -1,0 +1,253 @@
+body{
+	background-color: hsl(0, 0%, 90%);
+}
+.Logo{
+	width: 200px;
+	height: 95px;
+	margin-right: auto;
+}
+.container{
+	list-style: none;
+	display: flex;
+	background-color: white;
+	border-style: double;
+	border-color: #000000;
+	border-width: 7px;
+}
+.items{
+	padding-right: 100px;
+	padding-top: 37px;
+}
+.items a{
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+.items a:hover{
+	color: red;
+}
+table {
+        border-collapse: collapse;
+        width: 100%;
+}
+
+th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+}
+
+th {
+        background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+        background-color: #f2f2f2;
+}
+.title{
+	margin-left:75px;
+	margin-top:40px;
+}
+.pic1{
+	float: right;
+	width: 800px;
+	height: 500px;
+	margin-right: 75px;
+	margin-left: 40px;
+}
+.pagedescrip{
+	font-size: 22px;
+	font-family: Monaco, Monospace;
+	margin-left: 75px;
+}
+.skip{
+	margin-top: 60px;
+	margin-left: 75px;
+}
+.skip-button {
+    	background-color: #008CBA;
+    	color: white;
+    	text-decoration: none;
+   	padding: 10px 20px;
+    	display: inline-block;
+    	font-size: 20px;
+    	border: none;
+    	cursor: pointer;
+	margin-left: 75px;
+}
+.label2{
+	margin-top: 125px;
+	margin-left:75px;
+	margin-right:75px;
+	border-top-style: solid;
+	border-width: 5px;
+	border-color: black;
+	padding-top: 70px;
+}
+.table{
+	margin-left: 75px;
+	width: 1735px;
+	text-align: center;
+}
+.label3{
+	margin-left: 75px;
+	margin-top: 140px;
+}
+.guidee{
+	margin-left: 75px;
+}
+.alive{
+	color: green;
+}
+.deceased{
+	color: red
+}
+.kingdom1{
+	margin-top: 50px;
+	margin-left:75px;
+	margin-right:75px;
+	border-bottom-style: solid;
+	border-width: 5px;
+	border-color: gray;
+	padding-bottom: 50px;
+}
+.type1{		
+	margin-left:75px;
+	margin-top:60px;
+}
+.type2{
+	margin-top: 400px;
+	margin-left: 75px;
+}
+.HOUSE{
+	margin-top: 45px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: gray;
+	border-radius: 12px;
+}
+.HOUSES{
+	margin-top: 400px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: gray;
+	border-radius: 12px;
+}
+.HOUSE2{
+	margin-top: 45px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: gold;
+	border-radius: 12px;
+}
+.HOUSES2{
+	margin-top: 400px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: gold;
+	border-radius: 12px;
+}
+.HOUSE3{
+	margin-top: 45px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: orange;
+	border-radius: 12px;
+}
+.HOUSES3{
+	margin-top: 400px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: orange;
+	border-radius: 12px;
+}
+.HOUSES4{
+	margin-top: 740px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: Cyan;
+	border-radius: 12px;
+}
+.HOUSES5{
+	margin-top: 400px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: red;
+	border-radius: 12px;
+}
+.HOUSES6{
+	margin-top: 400px;
+	padding: 4px;
+	text-align:center;
+	margin-right: 75px;
+	margin-left: 75px;
+	background-color: black;
+	color:white;
+	border-radius: 12px;
+}
+.row {
+	margin-left: 75px;
+	margin-right: 75px;
+}
+.column1, .column2 {
+	margin-top:3px;
+	float: left;
+  	padding: 5px;
+	width: 12%;
+	margin-right: 15px;
+}
+.column1 img, .column2 img{
+	height: 250px;
+}
+.names{
+	text-align: center;
+	font-family: Garamond, Serif;
+}	
+.column1{
+	border-style: solid;
+	border-width:3px;
+	border-color: green;
+	border-radius: 10px;
+}
+.column2{
+	border-style: solid;
+	border-width: 3px;
+	border-color: red;
+	border-radius: 10px;
+}	
+.closemsg{
+	margin-top:500px;
+	font-size: 20px;
+	text-align: center;
+}
+.hideee{
+	margin-left: 75px;
+	margin-bottom:30px;
+}
+.hide-button {
+        background-color: #008CBA;
+        border: none;
+        padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+        display: inline-block;
+	color:white;
+        font-size: 16px;
+	cursor: pointer;
+}

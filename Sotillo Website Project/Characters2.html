@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CLOVERFIELD</title>
+		<link rel="stylesheet" href="style.css">
+		<style>
+			body{
+				background-color: hsl(0, 0%, 90%);
+			}
+			.Logo{
+				width: 200px;
+				height: 95px;
+				margin-right: auto;
+			}
+			.container{
+				list-style: none;
+				display: flex;
+				background-color: white;
+				border-style: double;
+				border-color: #000000;
+				border-width: 7px;
+			}
+			.items{
+				padding-right: 100px;
+				padding-top: 37px;
+			}
+			.items a{
+				color: black;
+				text-decoration: none;
+				font-size: 20px;
+			}
+			.items a:hover{
+				color: red;
+			}
+			.title{
+				margin-left:75px;
+				margin-top:40px;
+			}
+			.pic1{
+				float: right;
+				width: 800px;
+				height: 500px;
+				margin-right: 75px;
+				margin-left: 40px;
+			}
+			.pagedescrip{
+				font-size: 22px;
+				font-family: Monaco, Monospace;
+				margin-left: 75px;
+			}
+			.skip{
+				margin-top: 60px;
+				margin-left: 75px;
+			}
+			.skip-button {
+    				background-color: #008CBA;
+    				color: white;
+    				text-decoration: none;
+   				padding: 10px 20px;
+    				display: inline-block;
+    				font-size: 20px;
+    				border: none;
+    				cursor: pointer;
+				margin-left: 75px;
+			}
+			.label2{
+				margin-top: 125px;
+				margin-left:75px;
+				margin-right:75px;
+				border-top-style: solid;
+				border-width: 5px;
+				border-color: black;
+				padding-top: 70px;
+			}
+			.table{
+				margin-left: 75px;
+				width: 1735px;
+				text-align: center;
+			}
+			.label3{
+				margin-left: 75px;
+				margin-top: 140px;
+			}
+			.guidee{
+				margin-left: 75px;
+			}
+			.alive{
+				color: green;
+			}
+			.deceased{
+				color: red
+			}
+			.kingdom1{
+				margin-top: 50px;
+				margin-left:75px;
+				margin-right:75px;
+				border-bottom-style: solid;
+				border-width: 5px;
+				border-color: gray;
+				padding-bottom: 50px;
+			}
+			.type1{		
+				margin-left:75px;
+				margin-top:60px;
+			}
+			.type2{
+				margin-top: 400px;
+				margin-left: 75px;
+			}
+			.HOUSE{
+				margin-top: 45px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: gray;
+				border-radius: 12px;
+			}
+			.HOUSES{
+				margin-top: 400px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: gray;
+				border-radius: 12px;
+			}
+			.HOUSE2{
+				margin-top: 45px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: gold;
+				border-radius: 12px;
+			}
+			.HOUSES2{
+				margin-top: 400px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: gold;
+				border-radius: 12px;
+			}
+			.HOUSE3{
+				margin-top: 45px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: orange;
+				border-radius: 12px;
+			}
+			.HOUSES3{
+				margin-top: 400px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: orange;
+				border-radius: 12px;
+			}
+			.HOUSES4{
+				margin-top: 740px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: Cyan;
+				border-radius: 12px;
+			}
+			.HOUSES5{
+				margin-top: 400px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: red;
+				border-radius: 12px;
+			}
+			.HOUSES6{
+				margin-top: 400px;
+				padding: 4px;
+				text-align:center;
+				margin-right: 75px;
+				margin-left: 75px;
+				background-color: black;
+				color:white;
+				border-radius: 12px;
+			}
+			.row {
+				margin-left: 75px;
+				margin-right: 75px;
+			}
+
+			.column1, .column2 {
+				margin-top:3px;
+				float: left;
+  				padding: 5px;
+				width: 12%;
+				margin-right: 15px;
+			}
+			.column1 img, .column2 img{
+				height: 250px;
+			}
+			.names{
+				text-align: center;
+				font-family: Garamond, Serif;
+			}	
+			.column1{
+				border-style: solid;
+				border-width:3px;
+				border-color: green;
+				border-radius: 10px;
+			}
+			.column2{
+				border-style: solid;
+				border-width: 3px;
+				border-color: red;
+				border-radius: 10px;
+			}	
+			.closemsg{
+				margin-top:500px;
+				font-size: 20px;
+				text-align: center;
+			}
+			.hideee{
+				margin-left: 75px;
+				margin-bottom:30px;
+			}
+			.hide-button {
+            			background-color: #008CBA;
+           			border: none;
+            			padding: 10px 20px;
+            			text-align: center;
+            			text-decoration: none;
+            			display: inline-block;
+				color:white;
+            			font-size: 16px;
+            			cursor: pointer;
+        		}
+		</style>
+	</head>
+	<body>
+		<ul class="container">
+			<img src="Logo.png" class="Logo"> 
+			<li class="items"><a href="HomePage.html">Home</a></li>
+                	<li class="items"><a href="Characters.html">Characters</a></li>
+                	<li class="items"><a href="Squads And Members.html">Squads and Members</a></li>
+                	<li class="items"><a href="Grimoires And Attributes.html">Grimoires and Attributes</a></li>
+               		<li class="items"><a href="Character Rankings.html">Character Rankings</a></li>
+           	</ul>
+		
+		<div class="intro">
+			<h1 class="title">List of Characters</h1>
+			<img class="pic1" alt src="Characterspic.png">
+			<p class="pagedescrip">Welcome to our dedicated Black Clover Characters page, where the enchanting universe of Black Clover comes to life through its diverse and compelling cast. Discover the backstories, magical abilities, and intricate relationships of your favorite mages. From the unwavering determination of Asta to the noble royals, powerful Magic Knights, and enigmatic villains, each character adds depth and excitement to the story. Here, you'll find character profiles,  immerse yourself in the captivating lives, dreams, and adventures of these characters and get a closer look at what makes Black Clover an enduring sensation. </p>
+			<p class="pagedescrip">Join us as we embark on an exploration of the extraordinary characters that define Black Clover and become a part of the growing community of fans who share a passion for these captivating individuals.</p>
+			<h2 class="skip"> Skip to: </h2>
+			<a href="#CharacterProf" class="skip-button">Character Profiles</a>
+			
+		</div>
+		<h1 class="label2"> Characters Table </h1>
+		<div class="hideee">
+				<p id="tableskip">Want to see the table?</p>
+    				<a href="Characters.html" class="hide-button">Click Here!</a>
+		</div>
+		<div id="CharacterProf">
+			<h1 class="label3"> Character Profiles </h1>
+			<div class="guidee">
+				<p> Guide for Profiles: </p>
+				<p class="alive"> Green Border (Alive) </p>
+				<p class="deceased"> Red Border (Deceased) </p>
+			</div>
+			<h2 class="kingdom1"> Clover Kingdom </h2>
+			<h2 class="type1"> Royal House </h2>
+			<h3 class="HOUSE">House Kira</h3>
+		</div>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Kira1">
+    					<img src="CharacterPictures/Kira1.png" alt="Kira-1" style="width:100%"></a>
+					<p class="names"> Augustus Kira Clover XIII </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Kira2">
+    					<img src="CharacterPictures/Kira2.png" alt="Kira-2" style="width:100%"></a>
+					<p class="names"> Damnatio Kira </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Kira3">
+    					<img src="CharacterPictures/Kira3.png" alt="Kira-3" style="width:100%"></a>
+					<p class="names"> Finesse Calmreich </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES">House Vermillion</h3>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Vermillion1">
+    					<img src="CharacterPictures/Vermillion1.png" alt="Vermillion-1" style="width:100%"></a>
+					<p class="names"> Fuegoleon Vermillion </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vermillion2">
+    					<img src="CharacterPictures/Vermillion2.png" alt="Vermillion-2" style="width:100%"></a>
+					<p class="names"> Mereoleona Vermillion </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vermillion3">
+    					<img src="CharacterPictures/Vermillion3.png" alt="Vermillion-3" style="width:100%"></a>
+					<p class="names"> Leopold Vermillion </p>
+			</div>
+			<div class="column1">
+				<a href="#Vermillion4">
+    					<img src="CharacterPictures/Vermillion4.png" alt="Vermillion-4" style="width:100%"></a>
+					<p class="names"> Mimosa Vermillion </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vermillion5">
+    					<img src="CharacterPictures/Vermillion5.png" alt="Vermillion-5" style="width:100%"></a>
+					<p class="names"> Kirsch Vermillion </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES">House Silva</h3>
+		<div class="row">
+  			<div class="column2">
+				<a href="#Silva1">
+    					<img src="CharacterPictures/Silva1.png" alt="Silva-1" style="width:100%"></a>
+					<p class="names"> Acier Silva </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Silva2">
+    					<img src="CharacterPictures/Silva2.png" alt="Silva-2" style="width:100%"></a>
+					<p class="names"> Noelle Silva </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Silva3">
+    					<img src="CharacterPictures/Silva3.png" alt="Silva-3" style="width:100%"></a>
+					<p class="names"> Nozel Silva </p>
+			</div>
+			<div class="column1">
+				<a href="#Silva4">
+    					<img src="CharacterPictures/Silva4.png" alt="Silva-4" style="width:100%"></a>
+					<p class="names"> Nebra Silva </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Silva5">
+    					<img src="CharacterPictures/Silva5.png" alt="Silva-5" style="width:100%"></a>
+					<p class="names"> Solid Silva </p>
+  			</div>
+		</div>
+		<h2 class="type2"> Noble House </h2>
+		<h3 class="HOUSE2">House Vaude</h3>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Vaude1">
+    					<img src="CharacterPictures/Vaude1.png" alt="Vaude-1" style="width:100%"></a>
+					<p class="names"> Ledior Vaude </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vaude2">
+    					<img src="CharacterPictures/Vaude2.png" alt="Vaude-2" style="width:100%"></a>
+					<p class="names"> Liliane Vaude </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vaude3">
+    					<img src="CharacterPictures/Vaude3.png" alt="Vaude-3" style="width:100%"></a>
+					<p class="names"> Langris Vaude </p>
+			</div>
+			<div class="column1">
+				<a href="#Vaude4">
+    					<img src="CharacterPictures/Vaude4.png" alt="Vaude-4" style="width:100%"></a>
+					<p class="names"> Finral Roulacase </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Vaude5">
+    					<img src="CharacterPictures/Kira3.png" alt="Vaude-5" style="width:100%"></a>
+					<p class="names"> Finesse Calmreich </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES2"> House Boismortier </h3>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Boismortier1">
+    					<img src="CharacterPictures/Boismortier1.png" alt="Boismortier-1" style="width:100%"></a>
+					<p class="names"> Rill Boismortier </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Boismortier2">
+    					<img src="CharacterPictures/Boismortier2.png" alt="Boismortier-2" style="width:100%"></a>
+					<p class="names"> Walter </p>
+			</div>
+		</div>
+		<h3 class="HOUSES2"> House Adlai </h3>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Adlai1">
+    					<img src="CharacterPictures/Adlai1.png" alt="Adlai-1" style="width:100%"></a>
+					<p class="names"> Gauche Adlai </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Boismortier2">
+    					<img src="CharacterPictures/Adlai2.png" alt="Adlai-2" style="width:100%"></a>
+					<p class="names"> Marie Adlai </p>
+			</div>
+		</div>
+		<h3 class="HOUSES2"> House Faust </h3>
+		<div class="row">
+  			<div class="column1">
+				<a href="#Faust1">
+    					<img src="CharacterPictures/Faust1.png" alt="Faust-1" style="width:100%"></a>
+					<p class="names"> Nacht Faust </p>
+  			</div>
+  			<div class="column2">
+				<a href="#Faust2">
+    					<img src="CharacterPictures/Faust2.png" alt="Faust-2" style="width:100%"></a>
+					<p class="names"> Morgen Faust </p>
+			</div>
+		</div>
+		<h3 class="HOUSES2"> House Freese </h3>
+		<div class="row">
+  			<div class="column2">
+				<a href="#Freese1">
+    					<img src="CharacterPictures/Freese1.png" alt="Freese-1" style="width:100%"></a>
+					<p class="names"> Lord Freese </p>
+  			</div>
+  			<div class="column1">
+				<a href="#Freese2">
+    					<img src="CharacterPictures/Freese2.png" alt="Freese-2" style="width:100%"></a>
+					<p class="names"> Karna Freese </p>
+			</div>
+		</div>
+		<h2 class="type2"> Commoner Families </h2>
+		<h3 class="HOUSE3">Agrippa Family</h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Agrippa1.png" alt="Agrippa-1" style="width:100%"></a>
+					<p class="names"> Nathan Agrippa </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Agrippa2.png" alt="Agrippa-2" style="width:100%"></a>
+					<p class="names"> Jonna Agrippa </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Agrippa3.png" alt="Agrippa-3" style="width:100%"></a>
+					<p class="names"> Gordon Agrippa </p>
+			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Agrippa4.png" alt="Agrippa-4" style="width:100%"></a>
+					<p class="names"> Roxanne Agrippa </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Agrippa5.png" alt="Agrippa-5" style="width:100%"></a>
+					<p class="names"> Nilenia Agrippa </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES3"> Hage Church </h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Church1.png" alt="Church-1" style="width:100%"></a>
+					<p class="names"> Asta</p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Church2.png" alt="Church-2" style="width:100%"></a>
+					<p class="names"> Yuno </p>
+			</div>
+		</div>
+		<h3 class="HOUSES3">Unknown Houses</h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown1.png" alt="Unknown-1" style="width:100%"></a>
+					<p class="names"> Julius Novachrono </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown2.png" alt="Unknown-2" style="width:100%"></a>
+					<p class="names"> Yami Sukehiro </p>
+  			</div>
+  			<div class="column2">
+    					<img src="CharacterPictures/Unknown3.png" alt="Unknown-3" style="width:100%"></a>
+					<p class="names"> Conrad Leto </p>
+			</div>
+			<div class="column2">
+    					<img src="CharacterPictures/Unknown4.png" alt="Unknown-4" style="width:100%"></a>
+					<p class="names"> Lovilia </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown5.png" alt="Unknown-5" style="width:100%">
+					<p class="names"> Luck Voltia </p>
+  			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Unknown6.png" alt="Unknown-6" style="width:100%"></a>
+					<p class="names"> Magna Swing </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown7.png" alt="Unknown-7" style="width:100%"></a>
+					<p class="names"> Grey </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown8.png" alt="Unknown-8" style="width:100%"></a>
+					<p class="names"> Henry Legolant </p>
+			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Unknown9.png" alt="Unknown-9" style="width:100%"></a>
+					<p class="names"> Charmy Pappitson </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Unknown10.png" alt="Unknown-10" style="width:100%">
+					<p class="names"> Vanessa Enoteca </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES4">Diamond Kingdom</h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Diamond1.png" alt="Diamond-1" style="width:100%"></a>
+					<p class="names"> Mars </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Diamond2.png" alt="Diamond-2" style="width:100%"></a>
+					<p class="names"> Ladros </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Diamond3.png" alt="Diamond-3" style="width:100%"></a>
+					<p class="names"> Fana </p>
+			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Diamond4.png" alt="Diamond-4" style="width:100%"></a>
+					<p class="names"> Fanzell Kruger </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Diamond5.png" alt="Diamond-5" style="width:100%"></a>
+					<p class="names"> Dominante Code </p>
+  			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Diamond6.png" alt="Diamond-6" style="width:100%"></a>
+					<p class="names"> Mariella </p>
+  			</div>
+		</div>
+		
+		<h3 class="HOUSES5">Heart Kingdom</h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Heart1.png" alt="Heart-1" style="width:100%"></a>
+					<p class="names"> Lolopechka </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Heart2.png" alt="Heart-2" style="width:100%"></a>
+					<p class="names"> Gadjah </p>
+  			</div>
+		</div>
+		<h3 class="HOUSES6">Spade Kingdom</h3>
+		<div class="row">
+  			<div class="column1">
+    					<img src="CharacterPictures/Spade1.png" alt="Spade-1" style="width:100%"></a>
+					<p class="names"> Lucius Zogratis </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Spade2.png" alt="Spade-2" style="width:100%"></a>
+					<p class="names"> Dante Zogratis </p>
+  			</div>
+			<div class="column1">
+    					<img src="CharacterPictures/Spade3.png" alt="Spade-3" style="width:100%"></a>
+					<p class="names"> Vanica Zogratis </p>
+  			</div>
+  			<div class="column1">
+    					<img src="CharacterPictures/Spade4.png" alt="Spade-4" style="width:100%"></a>
+					<p class="names"> Zenon Zogratis </p>
+  			</div>
+		</div>
+		<footer class="closemsg">
+			<p> Note: Some characters might have not been included in this page.
+			<p> Thankyou for visiting this page, hope to see you again soon. I will continue to work and improve this website.
+			<h3 class="copyright">&copy; 2023 CLOVERFIELD Sotillo Project</h3>
+		</footer>
+	</body>
+</html>
