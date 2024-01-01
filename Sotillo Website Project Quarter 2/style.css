@@ -1,0 +1,46 @@
+﻿body {
+    background-color: blanchedalmond;
+}
+
+.pages {
+    list-style: none;
+    display: flex;
+    background-color: white;
+    border-style: double;
+    border-color: darksalmon;
+    border-width: 18px;
+    align-items: center;
+}
+
+.pages a{
+    float: left;
+    display: block;
+    text-decoration: none;
+    padding: 20px 69px;
+    font-size: 25px;
+}
+
+.pages a:link{
+    color: black;
+}
+
+.pages a:visited{
+    color: purple;
+}
+
+.pages a:hover{
+    color: red;
+}
+
+.pages a:active{
+    color: indianred;
+}
+
+.Logo {
+    width: 18%;
+    height: 12%;
+}
+
+.items{
+    text-decoration: none;
+}
