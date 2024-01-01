@@ -16,8 +16,8 @@
     float: left;
     display: block;
     text-decoration: none;
-    padding: 20px 69px;
-    font-size: 25px;
+    padding: 1em 2.85em;
+    font-size: 1.5em;
 }
 
 .pages a:link{
@@ -39,8 +39,4 @@
 .Logo {
     width: 18%;
     height: 12%;
-}
-
-.items{
-    text-decoration: none;
 }
