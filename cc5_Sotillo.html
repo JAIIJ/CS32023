@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Challenge 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modified FLAMES</h1>
+
+    <label for="name1">Name 1:</label>
+    <input type="text" id="name1" placeholder="Enter name 1"><br><br>
+    <label for="name2">Name 2:</label>
+    <input type="text" id="name2" placeholder="Enter name 2"><br><br>
+
+    <button onclick="flames()">Match Names</button>
+    <h3 id="name"></h3>
+
+    <h4>FLAMES Result:</h4>
+    <h3 id="result"></h3>
+
+    <script>
+        function flames() {
+            //get the names from the input fields
+            var name1 = document.getElementById('name1').value.trim().toUpperCase();
+            var name2 = document.getElementById('name2').value.trim().toUpperCase();
+
+            //display the names given by the user
+            document.getElementById('name').textContent = "Names: " + name1 + " and " + name2;
+
+            //remove spaces and special characters from names
+            name1 = name1.replace(/[^a-zA-Z]/g, '');
+            name2 = name2.replace(/[^a-zA-Z]/g, '');
+
+            //calculate the total characters of the names
+            var totalCharacters = name1.length + name2.length;
+
+            //define FLAMES acronym
+            var flames = "FLAMES";
+
+            var index = totalCharacters % flames.length;
+
+            //determine the meaning based on the FLAMES character
+            var result = "";
+            switch (flames[index]) {
+                case 'F':
+                    result = "Friends";
+                    break;
+                case 'L':
+                    result = "Lovers";
+                    break;
+                case 'A':
+                    result = "Acquaintances";
+                    break;
+                case 'M':
+                    result = "Marriage";
+                    break;
+                case 'E':
+                    result = "Enemies";
+                    break;
+                case 'S':
+                    result = "Sweethearts";
+                    break;
+            }
+
+            //display the FLAMES result
+            document.getElementById('result').textContent =  result;
+        }
+    </script>
+</body>
+</html>
